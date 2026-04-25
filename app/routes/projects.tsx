@@ -10,11 +10,11 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "Projet ERP en alternance",
+        title: "Strasflow",
         description:
-            "Contribution a un ERP avec developpement de fonctionnalites metier en Diva.",
-        stack: ["Diva", "SQL", "Gestion de projet"],
-        status: "En cours",
+            "Un ERP de gestion de matirele pour des manifestation sportive pour l'eurometropole de strasbourg. Cela comprenait une application lourde de gestion et une application mobile pour les agents. J'ai principalement travaillé sur l'application lourde.",
+        stack: ["React Router", "TypeScript", "Gestion de projet"],
+        status: "Fini",
     },
     {
         title: "Portfolio personnel",
