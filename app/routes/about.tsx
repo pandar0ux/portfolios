@@ -12,6 +12,11 @@ export default function About() {
     return (
         <div className="about-container">
             <main className="main-content">
+                <nav className="page-nav" aria-label="Navigation principale">
+                    <Link to="/" className="page-nav-link active">A propos</Link>
+                    <Link to="/projects" className="page-nav-link">Projets</Link>
+                </nav>
+
                 <section className="about-hero-card">
                     <div>
                         <h1>À Propos de Moi</h1>

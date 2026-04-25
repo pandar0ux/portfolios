@@ -28,6 +28,27 @@ body {
   gap: 1.25rem;
 }
 
+.page-nav {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.page-nav-link {
+  border: 1px solid #cbd5e1;
+  background: rgba(255, 255, 255, 0.75);
+  color: #0f172a;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-nav-link.active {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
 .about-hero-card,
 .about-section-card {
   background: rgba(255, 255, 255, 0.88);
@@ -118,6 +139,49 @@ body {
   font-weight: 600;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  padding: 1rem 1.1rem;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+
+.project-head h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.project-status {
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  background: #ecfeff;
+  color: #155e75;
+  border: 1px solid #a5f3fc;
+}
+
+.project-card p {
+  color: #1e293b;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
 @media (min-width: 768px) {
   .about-container {
     padding: 3rem 1.25rem;
@@ -132,5 +196,9 @@ body {
   .about-photo {
     width: 180px;
     height: 180px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
