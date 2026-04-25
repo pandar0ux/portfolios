@@ -4,5 +4,5 @@ import { getBasename } from "./site-path";
 
 export default {
   basename: getBasename(),
-  ssr: true,
+  ssr: false,
 } satisfies Config;
