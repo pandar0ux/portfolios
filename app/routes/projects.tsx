@@ -1,6 +1,10 @@
 import type { Route } from "./+types/projects";
 import { Link } from "react-router";
 
+function withBaseUrl(path: string) {
+    return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+}
+
 type Project = {
     title: string;
     description: string;
@@ -19,7 +23,7 @@ const projects: Project[] = [
         title: "Strasflow",
         description:
             "ERP de gestion de materiel pour manifestations sportives de l'Eurometropole de Strasbourg, avec une application de back-office et une application mobile agent.",
-        illustration: "/photo_likedin.png",
+        illustration: "/strasflow.png",
         illustrationAlt: "Illustration du projet Strasflow",
         techniques: ["TypeScript", "React Router", "Architecture ERP"],
         connaissances: ["Cycle de vie applicatif", "Flux metier", "Qualite logicielle"],
@@ -88,7 +92,7 @@ export default function Projects() {
                     {projects.map((project) => (
                         <article key={project.title} className="project-card">
                             <img
-                                src={project.illustration}
+                                src={withBaseUrl(project.illustration)}
                                 alt={project.illustrationAlt}
                                 className="project-illustration"
                             />

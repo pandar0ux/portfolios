@@ -1,6 +1,10 @@
 import type { Route } from "./+types/about";
 import { Link } from "react-router";
 
+function withBaseUrl(path: string) {
+    return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+}
+
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "À Propos - Mon Portfolio" },
@@ -30,7 +34,7 @@ export default function About() {
 
                     <div className="about-photo-wrapper">
                         <img
-                            src="/photo_likedin.png"
+                            src={withBaseUrl("photo_likedin.png")}
                             alt="Photo de profil"
                             className="about-photo"
                         />
