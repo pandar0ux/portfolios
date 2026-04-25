@@ -20,11 +20,10 @@ export default function About() {
 
                     <div className="about-photo-wrapper">
                         <img
-                            src="/profile.jpg"
+                            src="public\photo_likedin.png"
                             alt="Photo de profil"
                             className="about-photo"
                         />
-                        <p className="photo-hint">Remplace cette image avec `public/profile.jpg`</p>
                     </div>
                 </section>
 
