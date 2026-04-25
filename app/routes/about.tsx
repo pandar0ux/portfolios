@@ -25,10 +25,6 @@ export default function About() {
                             className="about-photo"
                         />
                     </div>
-                </section>
-
-                <section className="about-section-card">
-                    <h2>Mon Histoire</h2>
                     <p>
                         Je suis un développeur actuellement étudiant en informatique, je suis en alternance chez Soprema.
                         Dans le cadre de mon alternance, je travaille dans un ERP et j'apprend a develloper en Diva un language proprietaire de l'ERP.
