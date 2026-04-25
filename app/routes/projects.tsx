@@ -22,12 +22,12 @@ const projects: Project[] = [
     {
         title: "Strasflow",
         description:
-            "ERP de gestion de materiel pour manifestations sportives de l'Eurometropole de Strasbourg, avec une application de back-office et une application mobile agent.",
+            "ERP de gestion de materiel pour manifestations sportives de l'Eurometropole de Strasbourg, avec une application de back-office et une application mobile pour les agent.",
         illustration: "/strasflow.png",
         illustrationAlt: "Illustration du projet Strasflow",
-        techniques: ["TypeScript", "React Router", "Architecture ERP"],
-        connaissances: ["Cycle de vie applicatif", "Flux metier", "Qualite logicielle"],
-        competences: ["Analyse fonctionnelle", "Travail en equipe", "Communication"],
+        techniques: ["TypeScript", "React Router", "CICD gitlab"],
+        connaissances: ["Analyse des besoins", "Qualite logicielle"],
+        competences: ["Analyse fonctionnelle", "Travail en equipe", "Communication", "Gestion de projet"],
         status: "Termine",
         repoUrl: "https://git.unistra.fr/fenrir/stras-flow",
     },
