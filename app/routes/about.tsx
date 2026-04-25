@@ -20,7 +20,7 @@ export default function About() {
 
                     <div className="about-photo-wrapper">
                         <img
-                            src="public\photo_likedin.png"
+                            src="/photo_likedin.png"
                             alt="Photo de profil"
                             className="about-photo"
                         />
