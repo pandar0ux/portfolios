@@ -4,32 +4,49 @@ import { Link } from "react-router";
 type Project = {
     title: string;
     description: string;
-    stack: string[];
+    illustration: string;
+    illustrationAlt: string;
+    techniques: string[];
+    connaissances: string[];
+    competences: string[];
     status: string;
-    lien?: string;
+    repoUrl?: string;
+    productionUrl?: string;
 };
 
 const projects: Project[] = [
     {
         title: "Strasflow",
         description:
-            "Un ERP de gestion de matirele pour des manifestation sportive pour l'eurometropole de strasbourg. Cela comprenait une application lourde de gestion et une application mobile pour les agents. J'ai principalement travaillé sur l'application lourde.",
-        stack: ["React Router", "TypeScript", "Gestion de projet"],
+            "ERP de gestion de materiel pour manifestations sportives de l'Eurometropole de Strasbourg, avec une application de back-office et une application mobile agent.",
+        illustration: "/photo_likedin.png",
+        illustrationAlt: "Illustration du projet Strasflow",
+        techniques: ["TypeScript", "React Router", "Architecture ERP"],
+        connaissances: ["Cycle de vie applicatif", "Flux metier", "Qualite logicielle"],
+        competences: ["Analyse fonctionnelle", "Travail en equipe", "Communication"],
         status: "Termine",
-        lien: "https://git.unistra.fr/fenrir/stras-flow",
+        repoUrl: "https://git.unistra.fr/fenrir/stras-flow",
     },
     {
         title: "Portfolio personnel",
         description:
-            "Creation et evolution de mon portfolio pour presenter mon profil, mes competences et mes realisations.",
-        stack: ["React Router", "TypeScript", "CSS"],
+            "Site personnel pour presenter mon profil, mes projets et mes competences, avec une interface responsive et evolutive.",
+        illustration: "/photo_likedin.png",
+        illustrationAlt: "Illustration du portfolio personnel",
+        techniques: ["React Router", "TypeScript", "CSS"],
+        connaissances: ["Routing", "Composants reutilisables", "Accessibilite web"],
+        competences: ["UI Integration", "Structuration de contenu", "Autonomie"],
         status: "En cours",
     },
     {
         title: "Projet universitaire",
         description:
-            "Application developpee en equipe pendant mes etudes avec suivi des taches et repartition des roles.",
-        stack: ["Java", "Git", "Travail en equipe"],
+            "Application realisee en equipe pendant les etudes avec organisation des taches, versioning et suivi de livraison.",
+        illustration: "/photo_likedin.png",
+        illustrationAlt: "Illustration du projet universitaire",
+        techniques: ["Java", "Git", "SQL"],
+        connaissances: ["POO", "Tests de base", "Methodes projet"],
+        competences: ["Collaboration", "Resolution de problemes", "Rigueur"],
         status: "Termine",
     },
 ];
@@ -61,8 +78,8 @@ export default function Projects() {
                     <div>
                         <h1>Mes Projets</h1>
                         <p>
-                            Cette page te permet de presenter tes realisations. Tu peux modifier
-                            la liste dans le tableau <strong>projects</strong> du fichier.
+                            Chaque fiche contient une description courte, une illustration, les
+                            techniques, les connaissances, les competences et les liens utiles.
                         </p>
                     </div>
                 </section>
@@ -70,6 +87,12 @@ export default function Projects() {
                 <section className="projects-grid" aria-label="Liste de projets">
                     {projects.map((project) => (
                         <article key={project.title} className="project-card">
+                            <img
+                                src={project.illustration}
+                                alt={project.illustrationAlt}
+                                className="project-illustration"
+                            />
+
                             <div className="project-head">
                                 <h2>{project.title}</h2>
                                 <span className="project-status">{project.status}</span>
@@ -77,11 +100,60 @@ export default function Projects() {
 
                             <p>{project.description}</p>
 
-                            <ul className="skills-list">
-                                {project.stack.map((item) => (
-                                    <li key={item}>{item}</li>
-                                ))}
-                            </ul>
+                            <div className="project-section">
+                                <h3>Techniques</h3>
+                                <ul className="skills-list">
+                                    {project.techniques.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="project-section">
+                                <h3>Connaissances</h3>
+                                <ul className="skills-list">
+                                    {project.connaissances.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="project-section">
+                                <h3>Competences</h3>
+                                <ul className="skills-list">
+                                    {project.competences.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="project-links">
+                                {project.repoUrl ? (
+                                    <a
+                                        className="project-link"
+                                        href={project.repoUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Depot de code
+                                    </a>
+                                ) : (
+                                    <span className="project-link-muted">Depot: a ajouter</span>
+                                )}
+
+                                {project.productionUrl ? (
+                                    <a
+                                        className="project-link project-link-secondary"
+                                        href={project.productionUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        URL de production
+                                    </a>
+                                ) : (
+                                    <span className="project-link-muted">Production: non disponible</span>
+                                )}
+                            </div>
                         </article>
                     ))}
                 </section>
