@@ -15,7 +15,12 @@ export default function About() {
                 <section className="about-hero-card">
                     <div>
                         <h1>À Propos de Moi</h1>
-                        <p className="subtitle">Développeur</p>
+
+                        <p>
+                            Je suis un développeur actuellement étudiant en informatique, je suis en alternance chez Soprema.
+                            Dans le cadre de mon alternance, je travaille dans un ERP et j'apprend a develloper en Diva un language proprietaire de l'ERP.
+                            Lors de mes etudes, j'ai participé a plusieurs projets universitaires qui m'ont permis de développer mes compétences dans différents langages et technologies, j'ai aussi pu apprendre la gestion de projet.
+                        </p>
                     </div>
 
                     <div className="about-photo-wrapper">
@@ -25,11 +30,6 @@ export default function About() {
                             className="about-photo"
                         />
                     </div>
-                    <p>
-                        Je suis un développeur actuellement étudiant en informatique, je suis en alternance chez Soprema.
-                        Dans le cadre de mon alternance, je travaille dans un ERP et j'apprend a develloper en Diva un language proprietaire de l'ERP.
-                        Lors de mes etudes, j'ai participé a plusieurs projets universitaires qui m'ont permis de développer mes compétences dans différents langages et technologies, j'ai aussi pu apprendre la gestion de projet.
-                    </p>
                 </section>
 
                 <section className="about-section-card">
