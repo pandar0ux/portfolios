@@ -6,6 +6,7 @@ type Project = {
     description: string;
     stack: string[];
     status: string;
+    lien?: string;
 };
 
 const projects: Project[] = [
@@ -14,7 +15,8 @@ const projects: Project[] = [
         description:
             "Un ERP de gestion de matirele pour des manifestation sportive pour l'eurometropole de strasbourg. Cela comprenait une application lourde de gestion et une application mobile pour les agents. J'ai principalement travaillé sur l'application lourde.",
         stack: ["React Router", "TypeScript", "Gestion de projet"],
-        status: "Fini",
+        status: "Termine",
+        lien: "https://git.unistra.fr/fenrir/stras-flow",
     },
     {
         title: "Portfolio personnel",
