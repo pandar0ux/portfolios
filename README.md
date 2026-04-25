@@ -44,6 +44,14 @@ npm run build
 
 ## Deployment
 
+### GitHub Pages
+
+This repository includes a GitHub Actions workflow that deploys the site on every push to `main`.
+
+Before the first deployment, set the repository Pages source to GitHub Actions in the repository settings.
+
+The workflow automatically sets the app base path from the repository name, so project pages like `https://username.github.io/portfolios/` work without extra changes.
+
 ### Docker Deployment
 
 To build and run using Docker:

@@ -1,7 +1,8 @@
 import type { Config } from "@react-router/dev/config";
 
+import { getBasename } from "./site-path";
+
 export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
+  basename: getBasename(),
   ssr: true,
 } satisfies Config;
