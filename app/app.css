@@ -51,6 +51,11 @@ body {
   font-weight: 800;
 }
 
+.about-hero-card p {
+  color: #1e293b;
+  line-height: 1.65;
+}
+
 .subtitle {
   margin-top: 0.35rem;
   color: #334155;
