@@ -66,6 +66,26 @@ const projects: Project[] = [
         repoUrl: "https://github.com/Xen0Xys/Demography-Simulator",
         productionUrl: "https://xen0xys.github.io/Demography-Simulator/"
     },
+    {
+        title: "Simulation de Gestion d'un IUT",
+        description: "Ce projet est une simulation de gestion d'un IUT. Il vous mes dans la peau du directeur d'un IUT pour gerer principalement le nombre d'etudiant et le nombre de professeur dans chaque departement et l'entretient des locaux. Le but du projet est de sensibiliser aux problematique de la gestion d'un IUT et de montrer les differentes variables qui peuvent influencer la gestion d'un IUT.",
+        illustration: "/iut.png",
+        illustrationAlt: "Illustration du projet de simulateur de gestion d'un IUT",
+        techniques: ["C#", "Git", "Unity"],
+        connaissances: [
+            "Modelisation de la gestion d'un IUT",
+            "Logique de simulation et evolution temporelle",
+            "Structuration d'une interface de gestion",
+        ],
+        competences: [
+            "developpement d'un jeu en 3D avec Unity",
+            "creation d'assets 3D",
+            "travail en equipe",
+            "gestion de projet",
+        ],
+        status: "Termine",
+        repoUrl: "https://git.unistra.fr/g.seiler/coresoftware-t3/-/tree/main?ref_type=heads",
+    },
 ];
 
 export function meta({ }: Route.MetaArgs) {
