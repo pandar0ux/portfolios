@@ -45,15 +45,26 @@ const projects: Project[] = [
         productionUrl: "https://git.unistra.fr/czekaj/t3-maj23-t3-b/-/releases"
     },
     {
-        title: "Projet universitaire",
+        title: "Demography-Simulator",
         description:
-            "Application realisee en equipe pendant les etudes avec organisation des taches, versioning et suivi de livraison.",
-        illustration: "/photo_likedin.png",
-        illustrationAlt: "Illustration du projet universitaire",
-        techniques: ["Java", "Git", "SQL"],
-        connaissances: ["POO", "Tests de base", "Methodes projet"],
-        competences: ["Collaboration", "Resolution de problemes", "Rigueur"],
+            "ce projet est un simulateur de demographie qui se base sur la massification scolaire pour montrer les problematique de la demographie. Il permet de simuler l'evolution de la population en fonction de differentes variables comme le taux de natalite, le taux de mortalite et le taux de reussite et continiter dans les etudes. Il permet aussi de simuler l'impact de differentes politiques publiques sur la demographie.",
+        illustration: "/demographique.png",
+        illustrationAlt: "Illustration du projet de simulateur de demographie",
+        techniques: ["TypeScript", "Git", "HTML", "CSS"],
+        connaissances: [
+            "Modelisation demographique (natalite, mortalite, scolarisation)",
+            "Logique de simulation et evolution temporelle",
+            "Structuration d'une interface web de visualisation",
+        ],
+        competences: [
+            "traville sous pressions de delais",
+            "Priorisation des fonctionnalites essentielles",
+            "Implementation front-end en TypeScript/HTML/CSS",
+            "Collaboration et versioning avec Git/GitHub",
+        ],
         status: "Termine",
+        repoUrl: "https://github.com/Xen0Xys/Demography-Simulator",
+        productionUrl: "https://xen0xys.github.io/Demography-Simulator/"
     },
 ];
 
