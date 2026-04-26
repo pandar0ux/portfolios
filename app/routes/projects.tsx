@@ -57,7 +57,7 @@ const projects: Project[] = [
             "Structuration d'une interface web de visualisation",
         ],
         competences: [
-            "traville sous pressions de delais",
+            "travaille sous pressions de delais",
             "Priorisation des fonctionnalites essentielles",
             "Implementation front-end en TypeScript/HTML/CSS",
             "Collaboration et versioning avec Git/GitHub",
