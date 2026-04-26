@@ -116,8 +116,7 @@ export default function Projects() {
                     <div>
                         <h1>Mes Projets</h1>
                         <p>
-                            Chaque fiche contient une description courte, une illustration, les
-                            techniques, les connaissances, les competences et les liens utiles.
+                            Voici une sélection de projets sur lesquels j'ai travaillé, que ce soit dans le cadre de mes études.
                         </p>
                     </div>
                 </section>
