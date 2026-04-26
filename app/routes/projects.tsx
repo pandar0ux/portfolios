@@ -22,7 +22,7 @@ const projects: Project[] = [
     {
         title: "Strasflow",
         description:
-            "ERP de gestion de materiel pour manifestations sportives de l'Eurometropole de Strasbourg, avec une application de back-office et une application mobile pour les agent.",
+            "ERP de gestion de matériel pour les manifestations sportives de l’Eurométropole de Strasbourg, avec une application de back-office et une application mobile pour les agents.",
         illustration: "/strasflow.png",
         illustrationAlt: "Illustration du projet Strasflow",
         techniques: ["TypeScript", "React Router", "CICD gitlab", "git"],
@@ -34,7 +34,7 @@ const projects: Project[] = [
     {
         title: "Tyr - Jeux serieux sur les violences",
         description:
-            "Un jeux serieux dans lequel on incarne le chef d'un dojo qui fait partie de la mifia. Il faut eviter d'avoire trop d'eleve en les voilentant et en meme temps il faut avoir un plutôt bonne reputation pour eviter d'avoire des ennuis avec la police. Ce jeux doit permettre de sensibiliser aux differentes formes de violences et les differente forme qu'elle peuvent prendre.",
+            "Un jeu sérieux dans lequel on incarne le chef d’un dojo qui fait partie de la mafia. Il faut éviter d’avoir trop d’élèves en les violentant et, en même temps, il faut avoir une plutôt bonne réputation pour éviter d’avoir des ennuis avec la police. Ce jeu doit permettre de sensibiliser aux différentes formes de violences et aux différentes formes qu’elles peuvent prendre.",
         illustration: "/tyr.png",
         illustrationAlt: "Illustration du projet de jeux serieux",
         techniques: ["Java", "Git"],
@@ -47,7 +47,7 @@ const projects: Project[] = [
     {
         title: "Demography-Simulator",
         description:
-            "ce projet est un simulateur de demographie qui se base sur la massification scolaire pour montrer les problematique de la demographie. Il permet de simuler l'evolution de la population en fonction de differentes variables comme le taux de natalite, le taux de mortalite et le taux de reussite et continiter dans les etudes. Il permet aussi de simuler l'impact de differentes politiques publiques sur la demographie.",
+            "Ce projet est un simulateur de démographie qui se base sur la massification scolaire pour montrer les problématiques de la démographie. Il permet de simuler l’évolution de la population en fonction de différentes variables comme le taux de natalité, le taux de mortalité et le taux de réussite et de continuité dans les études. Il permet aussi de simuler l’impact de différentes politiques publiques sur la démographie.",
         illustration: "/demographique.png",
         illustrationAlt: "Illustration du projet de simulateur de demographie",
         techniques: ["TypeScript", "Git", "HTML", "CSS"],
@@ -68,7 +68,8 @@ const projects: Project[] = [
     },
     {
         title: "Simulation de Gestion d'un IUT",
-        description: "Ce projet est une simulation de gestion d'un IUT. Il vous mes dans la peau du directeur d'un IUT pour gerer principalement le nombre d'etudiant et le nombre de professeur dans chaque departement et l'entretient des locaux. Le but du projet est de sensibiliser aux problematique de la gestion d'un IUT et de montrer les differentes variables qui peuvent influencer la gestion d'un IUT.",
+        description:
+            "Ce projet est une simulation de gestion d’un IUT. Il vous met dans la peau du directeur d’un IUT pour gérer principalement le nombre d’étudiants et le nombre de professeurs dans chaque département, ainsi que l’entretien des locaux. Le but du projet est de sensibiliser aux problématiques de la gestion d’un IUT et de montrer les différentes variables qui peuvent influencer cette gestion.",
         illustration: "/iut.png",
         illustrationAlt: "Illustration du projet de simulateur de gestion d'un IUT",
         techniques: ["C#", "Git", "Unity"],
