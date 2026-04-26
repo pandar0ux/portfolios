@@ -26,9 +26,9 @@ export default function About() {
                         <h1>À Propos de Moi</h1>
 
                         <p>
-                            Je suis un développeur actuellement étudiant en informatique, je suis en alternance chez Soprema.
-                            Dans le cadre de mon alternance, je travaille dans un ERP et j'apprend a develloper en Diva un language proprietaire de l'ERP.
-                            Lors de mes etudes, j'ai participé a plusieurs projets universitaires qui m'ont permis de développer mes compétences dans différents langages et technologies, j'ai aussi pu apprendre la gestion de projet.
+                            Je suis développeur et actuellement étudiant en informatique, en alternance chez Soprema. Dans ce cadre, je travaille sur un ERP et développe en DIVA, un langage propriétaire, ce qui me permet de monter en compétences sur des problématiques concrètes en environnement professionnel.
+                            Au cours de mes études, j’ai participé à plusieurs projets universitaires qui m’ont permis de développer mes compétences dans différents langages et technologies, ainsi que d’acquérir des bases en gestion de projet.
+                            J’ai également réalisé un stage lors de ma deuxième année, durant lequel j’ai redéveloppé différents flux dans le cadre du passage d’une application en mode SaaS pour Soprema.
                         </p>
                     </div>
 
