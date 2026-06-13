@@ -89,6 +89,108 @@ a {
   z-index: 1;
 }
 
+.rpg-banner {
+  border: 1px solid rgba(246, 208, 120, 0.28);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(246, 208, 120, 0.16), transparent 30%),
+    linear-gradient(180deg, rgba(28, 39, 72, 0.98), rgba(10, 15, 30, 0.98));
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  padding: 1.1rem;
+}
+
+.rpg-banner-projects {
+  border-color: rgba(125, 211, 252, 0.24);
+}
+
+.rpg-banner-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.rpg-banner-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.02;
+  color: #ffffff;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.rpg-banner-copy {
+  max-width: 68ch;
+  color: #dde6f5;
+  line-height: 1.72;
+  margin: 0;
+}
+
+.rpg-banner-panel {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 22px;
+  background: rgba(6, 10, 20, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rpg-progress {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.rpg-progress-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f7f0df;
+}
+
+.rpg-progress-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.rpg-progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.rpg-progress-fill-xp {
+  width: 82%;
+  background: linear-gradient(90deg, #e4bc68, #a66d1f);
+}
+
+.rpg-progress-fill-skill {
+  width: 88%;
+  background: linear-gradient(90deg, #93c5fd, #2563eb);
+}
+
+.rpg-progress-fill-team {
+  width: 78%;
+  background: linear-gradient(90deg, #7fd9b7, #0f766e);
+}
+
+.rpg-progress-fill-quest {
+  width: 74%;
+  background: linear-gradient(90deg, #f6d078, #7c3aed);
+}
+
+.rpg-progress-fill-tool {
+  width: 84%;
+  background: linear-gradient(90deg, #c4b5fd, #8b5cf6);
+}
+
+.rpg-progress-fill-ambition {
+  width: 90%;
+  background: linear-gradient(90deg, #fb7185, #ef4444);
+}
+
 .page-nav {
   display: flex;
   flex-wrap: wrap;
@@ -454,6 +556,15 @@ a {
 
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rpg-banner {
+    padding: 1.4rem;
+  }
+
+  .rpg-banner-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.9fr);
+    align-items: center;
   }
 
   .rpg-metadata {

@@ -102,6 +102,33 @@ export default function Projects() {
     return (
         <div className="projects-container">
             <main className="main-content">
+                <header className="rpg-banner rpg-banner-projects">
+                    <div className="rpg-banner-grid">
+                        <div>
+                            <p className="subtitle">Tableau de guilde</p>
+                            <h1 className="rpg-banner-title">Quêtes accomplies</h1>
+                            <p className="rpg-banner-copy">
+                                Chaque projet est présenté comme une mission avec ses techniques, ses connaissances et ses récompenses obtenues.
+                            </p>
+                        </div>
+
+                        <div className="rpg-banner-panel">
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Quêtes terminées</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-quest" /></div>
+                            </div>
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Outils maîtrisés</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-tool" /></div>
+                            </div>
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Ambition</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-ambition" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
                 <nav className="page-nav" aria-label="Navigation principale">
                     <Link to="/" className="page-nav-link">
                         Fiche perso

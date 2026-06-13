@@ -28,6 +28,33 @@ export default function About() {
     return (
         <div className="about-container">
             <main className="main-content">
+                <header className="rpg-banner">
+                    <div className="rpg-banner-grid">
+                        <div>
+                            <p className="subtitle">Fiche de personnage</p>
+                            <h1 className="rpg-banner-title">Niveau 24, forgeron de solutions</h1>
+                            <p className="rpg-banner-copy">
+                                Développeur et étudiant en informatique, j’avance entre ERP, projets universitaires et applications métier comme dans une vraie campagne RPG.
+                            </p>
+                        </div>
+
+                        <div className="rpg-banner-panel">
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Expérience</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-xp" /></div>
+                            </div>
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Polyvalence</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-skill" /></div>
+                            </div>
+                            <div className="rpg-progress">
+                                <div className="rpg-progress-label">Travail d'équipe</div>
+                                <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-team" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
                 <nav className="page-nav" aria-label="Navigation principale">
                     <Link to="/" className="page-nav-link active">Fiche perso</Link>
                     <Link to="/projects" className="page-nav-link">Quêtes</Link>
