@@ -571,3 +571,135 @@ a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 767px) {
+
+  .about-container,
+  .projects-container {
+    padding: 1rem 0.8rem 2rem;
+  }
+
+  .about-container::before,
+  .projects-container::before {
+    inset: 0.6rem;
+    border-radius: 22px;
+  }
+
+  .rpg-banner {
+    padding: 0.95rem;
+    border-radius: 24px;
+  }
+
+  .rpg-banner-title {
+    font-size: clamp(1.8rem, 11vw, 2.5rem);
+  }
+
+  .rpg-banner-panel {
+    padding: 0.85rem;
+  }
+
+  .page-nav {
+    gap: 0.55rem;
+  }
+
+  .page-nav-link {
+    flex: 1 1 0;
+    text-align: center;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .about-hero-card,
+  .about-section-card,
+  .project-card {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .about-hero-card {
+    gap: 1rem;
+  }
+
+  .about-photo-wrapper {
+    justify-self: stretch;
+  }
+
+  .about-photo {
+    width: min(100%, 240px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .rpg-metadata {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    gap: 0.45rem;
+  }
+
+  .skills-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-illustration {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link,
+  .project-link-secondary,
+  .project-link-muted {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .quest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .quest-badge {
+    width: fit-content;
+  }
+
+  .quest-list-item {
+    padding: 0.75rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    gap: 0.8rem;
+  }
+
+  .rpg-banner-copy,
+  .about-hero-card p,
+  .project-card p {
+    line-height: 1.62;
+  }
+
+  .section-heading {
+    font-size: 1.08rem;
+  }
+
+  .project-section h3 {
+    font-size: 0.78rem;
+  }
+
+  .page-nav-link {
+    border-radius: 16px;
+  }
+}
