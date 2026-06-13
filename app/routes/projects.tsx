@@ -1,4 +1,3 @@
-import type { Route } from "./+types/projects";
 import { Link } from "react-router";
 
 function withBaseUrl(path: string) {
@@ -89,34 +88,35 @@ const projects: Project[] = [
     },
 ];
 
-export function meta({ }: Route.MetaArgs) {
+export function meta() {
     return [
-        { title: "Mes Projets - Mon Portfolio" },
+        { title: "Tableau des quêtes - Portfolio RPG" },
         {
             name: "description",
-            content: "Decouvrez les projets sur lesquels je travaille.",
+            content: "Découvrez les projets sous forme de tableau de quêtes avec un style RPG.",
         },
     ];
 }
 
 export default function Projects() {
     return (
-        <div className="about-container">
+        <div className="projects-container">
             <main className="main-content">
                 <nav className="page-nav" aria-label="Navigation principale">
                     <Link to="/" className="page-nav-link">
-                        A propos
+                        Fiche perso
                     </Link>
                     <Link to="/projects" className="page-nav-link active">
-                        Projets
+                        Quêtes
                     </Link>
                 </nav>
 
                 <section className="about-hero-card">
                     <div>
-                        <h1>Mes Projets</h1>
+                        <p className="subtitle">Tableau de guilde</p>
+                        <h1>Mes projets</h1>
                         <p>
-                            Voici une sélection de projets sur lesquels j'ai travaillé, que ce soit dans le cadre de mes études.
+                            Voici une sélection de projets sur lesquels j’ai travaillé dans le cadre de mes études et de mes expériences. Chaque carte représente une quête accomplie avec ses outils, ses apprentissages et ses récompenses.
                         </p>
                     </div>
                 </section>

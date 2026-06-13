@@ -1,14 +1,26 @@
-import type { Route } from "./+types/about";
 import { Link } from "react-router";
 
 function withBaseUrl(path: string) {
     return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 }
 
-export function meta({ }: Route.MetaArgs) {
+const profileStats = [
+    { label: "Classe", value: "Développeur en quête de maîtrise" },
+    { label: "Niveau", value: "Alternant + étudiant" },
+    { label: "Zone", value: "ERP, applications métier, jeux sérieux" },
+    { label: "Alignement", value: "Curieux, rigoureux, orienté équipe" },
+];
+
+const journeySteps = [
+    "Alternance chez Soprema sur un ERP et le langage propriétaire Diva.",
+    "Projets universitaires variés avec du front-end, du Java, du C# et de la simulation.",
+    "Stage de deuxième année centré sur la reprise de flux pour le passage d’une application en SaaS.",
+];
+
+export function meta() {
     return [
-        { title: "À Propos - Mon Portfolio" },
-        { name: "description", content: "Découvrez mon histoire et mes compétences" },
+        { title: "Bastion - Portfolio RPG" },
+        { name: "description", content: "Découvrez mon profil, mes compétences et mon parcours sous forme de fiche RPG." },
     ];
 }
 
@@ -17,32 +29,46 @@ export default function About() {
         <div className="about-container">
             <main className="main-content">
                 <nav className="page-nav" aria-label="Navigation principale">
-                    <Link to="/" className="page-nav-link active">A propos</Link>
-                    <Link to="/projects" className="page-nav-link">Projets</Link>
+                    <Link to="/" className="page-nav-link active">Fiche perso</Link>
+                    <Link to="/projects" className="page-nav-link">Quêtes</Link>
                 </nav>
 
                 <section className="about-hero-card">
                     <div>
-                        <h1>À Propos de Moi</h1>
+                        <p className="subtitle">Bastion du développeur</p>
+                        <h1>À propos de moi</h1>
 
                         <p>
-                            Je suis développeur et actuellement étudiant en informatique, en alternance chez Soprema. Dans ce cadre, je travaille sur un ERP et développe en DIVA, un langage propriétaire, ce qui me permet de monter en compétences sur des problématiques concrètes en environnement professionnel.
-                            Au cours de mes études, j’ai participé à plusieurs projets universitaires qui m’ont permis de développer mes compétences dans différents langages et technologies, ainsi que d’acquérir des bases en gestion de projet.
-                            J’ai également réalisé un stage lors de ma deuxième année, durant lequel j’ai redéveloppé différents flux dans le cadre du passage d’une application en mode SaaS pour Soprema.
+                            Je suis développeur et étudiant en informatique. En alternance chez Soprema, je travaille sur un ERP et je forge mes compétences sur Diva, un langage propriétaire, au contact de problématiques concrètes.
+                            Au fil de mes études, j’ai participé à plusieurs projets universitaires qui m’ont permis d’élargir mon arsenal technique en front-end, en Java, en C# et en gestion de projet.
+                            J’ai aussi réalisé un stage durant ma deuxième année, où j’ai redéveloppé différents flux dans le cadre du passage d’une application en mode SaaS pour Soprema.
                         </p>
+
+                        <div className="rpg-metadata" aria-label="Informations de personnage">
+                            {profileStats.map((stat) => (
+                                <div key={stat.label} className="rpg-stat">
+                                    <span className="rpg-stat-label">{stat.label}</span>
+                                    <span className="rpg-stat-value">{stat.value}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="about-photo-wrapper">
                         <img
                             src={withBaseUrl("photo_likedin.png")}
-                            alt="Photo de profil"
+                            alt="Portrait du développeur"
                             className="about-photo"
                         />
+                        <span className="quest-badge">Avatar du héros</span>
                     </div>
                 </section>
 
                 <section className="about-section-card">
-                    <h2>Mes Compétences</h2>
+                    <div className="quest-header">
+                        <h2 className="section-heading">Mes compétences</h2>
+                        <span className="quest-badge">Arsenal</span>
+                    </div>
                     <ul className="skills-list">
                         <li>React & React Router</li>
                         <li>TypeScript</li>
@@ -57,6 +83,21 @@ export default function About() {
                         <li>Python</li>
                         <li>Git</li>
                     </ul>
+                </section>
+
+                <section className="about-section-card">
+                    <div className="quest-header">
+                        <h2 className="section-heading">Journal de quête</h2>
+                        <span className="quest-badge">Parcours</span>
+                    </div>
+                    <div className="quest-list">
+                        {journeySteps.map((step) => (
+                            <div className="quest-list-item" key={step}>
+                                <span className="quest-list-icon" aria-hidden="true" />
+                                <p>{step}</p>
+                            </div>
+                        ))}
+                    </div>
                 </section>
             </main>
         </div>
