@@ -31,8 +31,8 @@ export default function About() {
                 <header className="rpg-banner">
                     <div className="rpg-banner-grid">
                         <div>
-                            <p className="subtitle">Fiche de personnage</p>
-                            <h1 className="rpg-banner-title">Niveau 24, forgeron de solutions</h1>
+                            <p className="subtitle">A propos</p>
+                            <h1 className="rpg-banner-title">Développeur d'application</h1>
                             <p className="rpg-banner-copy">
                                 Développeur et étudiant en informatique, j’avance entre ERP, projets universitaires et applications métier comme dans une vraie campagne RPG.
                             </p>
@@ -56,13 +56,12 @@ export default function About() {
                 </header>
 
                 <nav className="page-nav" aria-label="Navigation principale">
-                    <Link to="/" className="page-nav-link active">Fiche perso</Link>
-                    <Link to="/projects" className="page-nav-link">Quêtes</Link>
+                    <Link to="/" className="page-nav-link active">Compétences</Link>
+                    <Link to="/projects" className="page-nav-link">Mission</Link>
                 </nav>
 
                 <section className="about-hero-card">
                     <div>
-                        <p className="subtitle">Bastion du développeur</p>
                         <h1>À propos de moi</h1>
 
                         <p>
@@ -87,14 +86,12 @@ export default function About() {
                             alt="Portrait du développeur"
                             className="about-photo"
                         />
-                        <span className="quest-badge">Avatar du héros</span>
                     </div>
                 </section>
 
                 <section className="about-section-card">
                     <div className="quest-header">
                         <h2 className="section-heading">Mes compétences</h2>
-                        <span className="quest-badge">Arsenal</span>
                     </div>
                     <ul className="skills-list">
                         <li>React & React Router</li>
@@ -114,8 +111,7 @@ export default function About() {
 
                 <section className="about-section-card">
                     <div className="quest-header">
-                        <h2 className="section-heading">Journal de quête</h2>
-                        <span className="quest-badge">Parcours</span>
+                        <h2 className="section-heading">Parcours</h2>
                     </div>
                     <div className="quest-list">
                         {journeySteps.map((step) => (

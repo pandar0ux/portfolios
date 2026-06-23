@@ -105,16 +105,15 @@ export default function Projects() {
                 <header className="rpg-banner rpg-banner-projects">
                     <div className="rpg-banner-grid">
                         <div>
-                            <p className="subtitle">Tableau de guilde</p>
-                            <h1 className="rpg-banner-title">Quêtes accomplies</h1>
+                            <h1 className="rpg-banner-title">Missions accomplies</h1>
                             <p className="rpg-banner-copy">
-                                Chaque projet est présenté comme une mission avec ses techniques, ses connaissances et ses récompenses obtenues.
+                                Chaque projet est présenté avec ses techniques et les connaissances nessesaire pour le réaliser.
                             </p>
                         </div>
 
                         <div className="rpg-banner-panel">
                             <div className="rpg-progress">
-                                <div className="rpg-progress-label">Quêtes terminées</div>
+                                <div className="rpg-progress-label">Missions terminées</div>
                                 <div className="rpg-progress-track"><span className="rpg-progress-fill rpg-progress-fill-quest" /></div>
                             </div>
                             <div className="rpg-progress">
@@ -134,16 +133,15 @@ export default function Projects() {
                         Fiche perso
                     </Link>
                     <Link to="/projects" className="page-nav-link active">
-                        Quêtes
+                        Missions
                     </Link>
                 </nav>
 
                 <section className="about-hero-card">
                     <div>
-                        <p className="subtitle">Tableau de guilde</p>
                         <h1>Mes projets</h1>
                         <p>
-                            Voici une sélection de projets sur lesquels j’ai travaillé dans le cadre de mes études et de mes expériences. Chaque carte représente une quête accomplie avec ses outils, ses apprentissages et ses récompenses.
+                            Voici une sélection de projets sur lesquels j’ai travaillé dans le cadre de mes études et de mes expériences. Chaque carte représente une mission accomplie avec ses outils, ses apprentissages et ses récompenses.
                         </p>
                     </div>
                 </section>
