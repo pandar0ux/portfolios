@@ -130,7 +130,7 @@ export default function Projects() {
 
                 <nav className="page-nav" aria-label="Navigation principale">
                     <Link to="/" className="page-nav-link">
-                        Fiche perso
+                        Compétences
                     </Link>
                     <Link to="/projects" className="page-nav-link active">
                         Missions

@@ -5,10 +5,10 @@ function withBaseUrl(path: string) {
 }
 
 const profileStats = [
-    { label: "Classe", value: "Développeur en quête de maîtrise" },
+    { label: "Rôle", value: "Développeur en quête de maîtrise" },
     { label: "Niveau", value: "Alternant + étudiant" },
-    { label: "Zone", value: "ERP, applications métier, jeux sérieux" },
-    { label: "Alignement", value: "Curieux, rigoureux, orienté équipe" },
+    { label: "Domaine", value: "ERP, applications métier, jeux sérieux" },
+    { label: "Personnalité", value: "Curieux, rigoureux, orienté équipe" },
 ];
 
 const journeySteps = [
