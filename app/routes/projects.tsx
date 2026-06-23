@@ -1,8 +1,9 @@
 import { Link } from "react-router";
 
-function withBaseUrl(path: string) {
-    return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
-}
+import demographyImage from "../assets/demographique.png";
+import iutImage from "../assets/iut.png";
+import strasflowImage from "../assets/strasflow.png";
+import tyrImage from "../assets/tyr.png";
 
 type Project = {
     title: string;
@@ -22,7 +23,7 @@ const projects: Project[] = [
         title: "Strasflow",
         description:
             "ERP de gestion de matériel pour les manifestations sportives de l’Eurométropole de Strasbourg, avec une application de back-office et une application mobile pour les agents.",
-        illustration: "/strasflow.png",
+        illustration: strasflowImage,
         illustrationAlt: "Illustration du projet Strasflow",
         techniques: ["TypeScript", "React Router", "CICD gitlab", "git"],
         connaissances: ["Analyse des besoins", "Qualite logicielle"],
@@ -34,7 +35,7 @@ const projects: Project[] = [
         title: "Tyr - Jeux serieux sur les violences",
         description:
             "Un jeu sérieux dans lequel on incarne le chef d’un dojo qui fait partie de la mafia. Il faut éviter d’avoir trop d’élèves en les violentant et, en même temps, il faut avoir une plutôt bonne réputation pour éviter d’avoir des ennuis avec la police. Ce jeu doit permettre de sensibiliser aux différentes formes de violences et aux différentes formes qu’elles peuvent prendre.",
-        illustration: "/tyr.png",
+        illustration: tyrImage,
         illustrationAlt: "Illustration du projet de jeux serieux",
         techniques: ["Java", "Git"],
         connaissances: ["programation orienté objet", "Composants reutilisables"],
@@ -47,7 +48,7 @@ const projects: Project[] = [
         title: "Demography-Simulator",
         description:
             "Ce projet est un simulateur de démographie qui se base sur la massification scolaire pour montrer les problématiques de la démographie. Il permet de simuler l’évolution de la population en fonction de différentes variables comme le taux de natalité, le taux de mortalité et le taux de réussite et de continuité dans les études. Il permet aussi de simuler l’impact de différentes politiques publiques sur la démographie.",
-        illustration: "/demographique.png",
+        illustration: demographyImage,
         illustrationAlt: "Illustration du projet de simulateur de demographie",
         techniques: ["TypeScript", "Git", "HTML", "CSS"],
         connaissances: [
@@ -69,7 +70,7 @@ const projects: Project[] = [
         title: "Simulation de Gestion d'un IUT",
         description:
             "Ce projet est une simulation de gestion d’un IUT. Il vous met dans la peau du directeur d’un IUT pour gérer principalement le nombre d’étudiants et le nombre de professeurs dans chaque département, ainsi que l’entretien des locaux. Le but du projet est de sensibiliser aux problématiques de la gestion d’un IUT et de montrer les différentes variables qui peuvent influencer cette gestion.",
-        illustration: "/iut.png",
+        illustration: iutImage,
         illustrationAlt: "Illustration du projet de simulateur de gestion d'un IUT",
         techniques: ["C#", "Git", "Unity"],
         connaissances: [
@@ -150,9 +151,11 @@ export default function Projects() {
                     {projects.map((project) => (
                         <article key={project.title} className="project-card">
                             <img
-                                src={withBaseUrl(project.illustration)}
+                                src={project.illustration}
                                 alt={project.illustrationAlt}
                                 className="project-illustration"
+                                loading="lazy"
+                                decoding="async"
                             />
 
                             <div className="project-head">

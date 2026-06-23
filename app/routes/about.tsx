@@ -1,8 +1,6 @@
 import { Link } from "react-router";
 
-function withBaseUrl(path: string) {
-    return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
-}
+import profilePhoto from "../assets/photo_likedin.png";
 
 const profileStats = [
     { label: "Rôle", value: "Développeur en quête de maîtrise" },
@@ -82,9 +80,11 @@ export default function About() {
 
                     <div className="about-photo-wrapper">
                         <img
-                            src={withBaseUrl("photo_likedin.png")}
+                            src={profilePhoto}
                             alt="Portrait du développeur"
                             className="about-photo"
+                            loading="eager"
+                            decoding="async"
                         />
                     </div>
                 </section>
